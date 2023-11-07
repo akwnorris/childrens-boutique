@@ -7,8 +7,6 @@ body {
   margin: 0;
 }
 
-/* logo */
-
 .logo {
   display: flex;
   margin: 0 auto;
@@ -21,8 +19,6 @@ body {
   height: auto;
   margin-top: 15px;
 }
-
-/* nav bar */
 
 header {
   text-align: center;
@@ -46,8 +42,6 @@ nav {
   margin-right: 15px;
 }
 
-/* carousel */
-
 .App {
   background-color: transparent;
   display: flex;
@@ -69,5 +63,12 @@ nav {
   align-items: center;
 }
 
+.carousel-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-
+.carousel-container .slide img {
+  max-width: 100%;
+  height: auto;
+}
