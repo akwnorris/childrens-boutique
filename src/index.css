@@ -39,3 +39,16 @@ header {
   display: inline;
   margin-right: 15px;
 }
+
+/* carousel */
+
+.carousel-slide {
+  max-width: 15px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: auto;
+}
