@@ -1,16 +1,16 @@
 import React from 'react';
+import './App.css';
+import ImageCarousel from './ImageCarousel';
 
 function App() {
   return (
-    <div>
-      <header role="banner">
-        {/* ... Your header content ... */}
+    <div className="App">
+      <header className="App-header">
+        <h1>Image Carousel</h1>
       </header>
-      <main role="main">
+      <main>
+        <ImageCarousel />
       </main>
-      <footer role="contentinfo">
-        {/* ... Your footer content ... */}
-      </footer>
     </div>
   );
 }
