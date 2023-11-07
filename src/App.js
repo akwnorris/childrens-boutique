@@ -14,6 +14,11 @@ function App() {
             <li><a href="#">New Arrivals</a></li>
             <li><a href="#">Girls</a></li>
             <li><a href="#">Boys</a></li>
+            <li><a href="#">Accesories</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Toys & Gifts</a></li>
+            <li><a href="#">Holiday</a></li>
+            <li><a href="#">Sale</a></li>
           </ul>
         </nav>
       </header>
