@@ -1,37 +1,20 @@
 import React from 'react';
-import { Slide, SideNav } from 'hero-slider';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const ImageCarousel = () => {
   return (
-    <Slide
-      settings={{
-        slidingType: 'linear',
-        slidingTime: 2000,
-      }}
-    >
-      <SideNav position="bottom" numSlides={3} />
-      <div
-        style={{
-          background: `url(${process.env.PUBLIC_URL}/baby clothes.jpg)`,
-          width: '100%',
-          height: '100vh',
-        }}
-      ></div>
-      <div
-        style={{
-          background: `url(${process.env.PUBLIC_URL}/toys.jpg)`,
-          width: '100%',
-          height: '100vh',
-        }}
-      ></div>
-      <div
-        style={{
-          background: `url(${process.env.PUBLIC_URL}/christmas.jpg)`,
-          width: '100%',
-          height: '100vh',
-        }}
-      ></div>
-    </Slide>
+    <Carousel>
+      <div>
+        <img src="/baby clothes.jpg" alt="Image 1" />
+      </div>
+      <div>
+        <img src="/toys.jpg" alt="Image 2" />
+      </div>
+      <div>
+        <img src="/christmas.jpg" alt="Image 3" />
+      </div>
+    </Carousel>
   );
 };
 
