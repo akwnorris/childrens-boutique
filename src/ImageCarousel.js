@@ -6,7 +6,7 @@ const ImageCarousel = () => {
   return (
     <Carousel>
       <div>
-        <img src="/baby clothes.jpg" alt="Image 1" />
+        <img src="/baby clothes.jpg" alt="lkjfalksdjflas" />
       </div>
       <div>
         <img src="/toys.jpg" alt="Image 2" />
