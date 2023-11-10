@@ -6,13 +6,13 @@ const ImageCarousel = () => {
   return (
     <Carousel>
       <div>
-        <img src="/baby clothes.jpg" alt="lkjfalksdjflas" />
+        <img src="/baby clothes.jpg" alt="Baby Clothes" />
       </div>
       <div>
-        <img src="/toys.jpg" alt="Image 2" />
+        <img src="/toys.jpg" alt="Toys" />
       </div>
       <div>
-        <img src="/christmas.jpg" alt="Image 3" />
+        <img src="/christmas.jpg" alt="Christmas" />
       </div>
     </Carousel>
   );
