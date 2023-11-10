@@ -1,12 +1,11 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import ImageCarousel from './ImageCarousel';
 
-describe('ImageCarousel', () => {
-  test('renders ImageCarousel component', () => {
-    render(<ImageCarousel />);
-    expect(screen.getByAltText('lkjfalksdjflas')).toBeInTheDocument();
-    //expect(screen.getByAltText('Image 2')).toBeInTheDocument();
-    //expect(screen.getByAltText('Image 3')).toBeInTheDocument();
-  });
+test('renders images in the carousel', () => {
+  const { queryAllByAltText } = render(<ImageCarousel />);
+  const babyClothesImages = queryAllByAltText('Baby Clothes');
+
+  expect(babyClothesImages.length).toBe(1);
+  expect(babyClothesImages[0]).toBeInTheDocument();
 });
