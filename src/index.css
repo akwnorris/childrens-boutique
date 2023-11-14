@@ -95,14 +95,16 @@ nav {
   left: 20%; 
   transform: translate(-50%, -50%);
   padding: 20px 50px;
-  background-color: #f0e9e9; /* Set background color */
-  color: black; /* Set text color */
+  background-color: white; /* Set background color */
+  color: #b45e6d; /* Set text color */
   font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .carousel-button:hover {
-  background-color: #45a049;
+  background-color: #f0e9e9;
 }
