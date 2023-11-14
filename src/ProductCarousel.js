@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProductCarousel.css';
+import './ProductCarousel.module.css';
 
 const ProductCarousel = () => {
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
@@ -18,10 +18,20 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="carousel">
-      <button className="carousel-button" onClick={prevProduct}>Previous</button>
-      <img src={products[currentProductIndex].image} alt={products[currentProductIndex].name} className="carousel-image" />
-      <button className="carousel-button" onClick={nextProduct}>Next</button>
+    <div className="product-carousel">
+      <button className="p-button" onClick={prevProduct}>Previous</button>
+      <div className="image-list">
+        {products.map((product, index) => (
+          <img
+            key={index}
+            src={product.image}
+            alt={product.name}
+            className={index === currentProductIndex ? 'carousel-image active' : 'carousel-image'}
+            style={{ width: '150px', height: '200px' }} 
+          />
+        ))}
+      </div>
+      <button className="product-button" onClick={nextProduct}>Next</button>
     </div>
   );
 };
