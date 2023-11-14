@@ -49,11 +49,11 @@ const ProductCarousel = () => {
 
       <div className={styles.imageList}>
         {products.map((product, index) => (
-          <img
+          <img className={styles.productImage}
             key={index}
             src={product.image}
             alt={product.name}
-            className={index === currentProductIndex ? `${styles.carouselImage} ${styles.active}` : styles.carouselImage}
+            className={index === currentProductIndex ? `${styles.productImage} ${styles.active}` : styles.productImage}
             style={{ width: '200px', height: '250px'}}
           />
         ))}
