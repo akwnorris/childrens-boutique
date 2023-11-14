@@ -63,12 +63,15 @@ nav {
   align-items: center;
 }
 
-.carousel-container {
+.main-carousel {
   max-width: 100%;
   margin: 0 auto;
 }
 
-.carousel-container .slide img {
-  max-width: 100%;
-  height: auto;
+.main-carousel .carousel-image {
+  display: none; /* Hide the images outside the carousel */
+}
+
+.main-carousel .carousel-image:first-child {
+  display: block; /* Display the first image in the carousel */
 }
