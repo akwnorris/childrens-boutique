@@ -5,7 +5,7 @@ import './index.css';
 
 const ImageCarousel = () => {
   return (
-    <Carousel className="main-carousel" autoPlay interval={3000} infiniteLoop showStatus={false}>
+    <Carousel className="main-carousel" autoPlay interval={4000} infiniteLoop showStatus={false}>
       <div className="carousel-item">
         <img src="/baby clothes.jpg" alt="Baby Clothes Image" className="carousel-image" />
         <button className="carousel-button">Shop New Arrivals</button>
