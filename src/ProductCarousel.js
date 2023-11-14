@@ -20,8 +20,25 @@ const ProductCarousel = () => {
   return (
     <div className="product-carousel">
       <button className="slick-prev-btn slick-arrow slick-disabled" onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
-        <img width="9" height="15" src="/arrow-default.svg" alt="Previous" />
+      <img
+          width="9"
+          height="15"
+          src="/arrow-default.svg"
+          alt="Previous"
+          style={{ transform: 'scaleX(-1)' }}
+        />
       </button>
+    
+      <button className="slick-next-btn slick-arrow" onClick={nextProduct} aria-disabled={currentProductIndex === products.length - 1}>
+      <img
+          width="9"
+          height="15"
+          src="/arrow-default.svg"
+          alt="Next"
+          style={{ transform: 'scaleX(1)' }} // No transformation for the next arrow
+        />
+      </button>
+
       <div className="image-list">
         {products.map((product, index) => (
           <img
@@ -29,13 +46,10 @@ const ProductCarousel = () => {
             src={product.image}
             alt={product.name}
             className={index === currentProductIndex ? 'carousel-image active' : 'carousel-image'}
-            style={{ width: '100px', height: '100px' }}
+            style={{ width: '100px', height: '100px'}}
           />
         ))}
       </div>
-      <button className="slick-next-btn slick-arrow" onClick={nextProduct} aria-disabled={currentProductIndex === products.length - 1}>
-        <img width="9" height="15" src="/arrow-default.svg" alt="Next" />
-      </button>
     </div>
   );
 };
