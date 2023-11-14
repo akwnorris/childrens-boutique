@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ImageCarousel from './ImageCarousel';
+import ProductCarousel from './ProductCarousel';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </nav>
       </header>
       <ImageCarousel />
+      <ProductCarousel />
     </div>
   );
 }
