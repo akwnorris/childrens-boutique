@@ -68,10 +68,10 @@ nav {
   margin: 0 auto;
 }
 
-.main-carousel .carousel-image {
-  display: none; /* Hide the images outside the carousel */
+.carousel .thumbs {
+  display: none;
 }
 
-.main-carousel .carousel-image:first-child {
-  display: block; /* Display the first image in the carousel */
+.carousel .thumb.selected {
+  display: none;
 }
