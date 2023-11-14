@@ -4,10 +4,9 @@ import './ProductCarousel.css';
 const ProductCarousel = () => {
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
   const products = [
-    { link: '...', image: 'image1.jpg', name: 'Product 1' },
-    { link: '...', image: 'image2.jpg', name: 'Product 2' },
-    { link: '...', image: 'image3.jpg', name: 'Product 3' },
-    // Add more products here
+    { link: '...', image: 'polkadot.jpg', name: 'Polka Dot Top' },
+    { link: '...', image: 'bow.jpg', name: 'Yellow Bow' },
+    { link: '...', image: 'bearjacket.jpg', name: 'Bear Jacket' },
   ];
 
   const prevProduct = () => {
