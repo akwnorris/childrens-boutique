@@ -15,6 +15,10 @@ const ImageCarousel = () => {
         <button className="carousel-button">Explore Gifts</button>
       </div>
       <div className="carousel-item">
+        <img src="/rainboots.jpg" alt="Rainboots Image" className="carousel-image" />
+        <button className="carousel-button">New Rainboot Styles In Stock</button>
+      </div>
+      <div className="carousel-item">
         <img src="/babyxmas.jpg" alt="Baby's First Christmas Image" className="carousel-image" />
         <button className="carousel-button">Shop Our Christmas Looks</button>
       </div>
