@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ProductCarousel.module.css';
+import styles from './ProductCarousel.module.css';
 
 const ProductCarousel = () => {
   const [currentProductIndex, setCurrentProductIndex] = useState(0);
@@ -18,36 +18,42 @@ const ProductCarousel = () => {
   };
 
   return (
-    <div className="product-carousel">
-        <h2>Current Best Sellers</h2>
+    <div className={styles.productCarousel}>
+      <div className={styles.headerContainer}>
+        <h2>Featured Products</h2>
+      </div>
 
-      <button className="slick-prev-btn slick-arrow slick-disabled" onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
-      <img
-          width="9"
-          height="15"
-          src="/arrow-default.svg"
-          alt="Previous"
-          style={{ transform: 'scaleX(-1)' }}
-        />
-      </button>
-    
-      <button className="slick-next-btn slick-arrow" onClick={nextProduct} aria-disabled={currentProductIndex === products.length - 1}>
-      <img
-          width="9"
-          height="15"
-          src="/arrow-default.svg"
-          alt="Next"
-          style={{ transform: 'scaleX(1)' }} // No transformation for the next arrow
-        />
-      </button>
+    {/* Commenting out the buttonContainer 
+      <div className={styles.buttonContainer}>
+        <button className={`${styles.slickArrow} ${styles.slickPrevBtn} ${currentProductIndex === 0 ? styles.slickDisabled : ''}`} onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
+          <img
+            width="9"
+            height="15"
+            src="/arrow-default.svg"
+            alt="Previous"
+            style={{ transform: 'scaleX(-1)' }}
+          />
+        </button>
+      
+        <button className={`${styles.slickArrow} ${styles.slickNextBtn} ${currentProductIndex === products.length - 1 ? styles.slickDisabled : ''}`} onClick={nextProduct} aria-disabled={currentProductIndex === products.length - 1}>
+          <img
+            width="9"
+            height="15"
+            src="/arrow-default.svg"
+            alt="Next"
+            style={{ transform: 'scaleX(1)' }}
+          />
+        </button>
+      </div> 
+      */}
 
-      <div className="image-list">
+      <div className={styles.imageList}>
         {products.map((product, index) => (
           <img
             key={index}
             src={product.image}
             alt={product.name}
-            className={index === currentProductIndex ? 'carousel-image active' : 'carousel-image'}
+            className={index === currentProductIndex ? `${styles.carouselImage} ${styles.active}` : styles.carouselImage}
             style={{ width: '200px', height: '200px'}}
           />
         ))}
