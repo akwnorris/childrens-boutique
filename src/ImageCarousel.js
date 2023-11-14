@@ -8,15 +8,15 @@ const ImageCarousel = () => {
     <Carousel className="main-carousel" autoPlay interval={3000} infiniteLoop showStatus={false}>
       <div className="carousel-item">
         <img src="/baby clothes.jpg" alt="Baby Clothes Image" className="carousel-image" />
-        <button className="carousel-button">Button for Clothes</button>
+        <button className="carousel-button">Shop New Arrivals</button>
       </div>
       <div className="carousel-item">
         <img src="/toys.jpg" alt="Baby Toys Image" className="carousel-image" />
-        <button className="carousel-button">Button for Toys</button>
+        <button className="carousel-button">Explore Gifts</button>
       </div>
       <div className="carousel-item">
         <img src="/babyxmas.jpg" alt="Baby's First Christmas Image" className="carousel-image" />
-        <button className="carousel-button">Button for Christmas</button>
+        <button className="carousel-button">Shop Our Christmas Looks</button>
       </div>
     </Carousel>
   );
