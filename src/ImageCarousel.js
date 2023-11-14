@@ -13,7 +13,7 @@ const ImageCarousel = () => {
         <img src="/toys.jpg" alt="Baby Toys Image" className="carousel-image" />
       </div>
       <div>
-        <img src="/christmas.jpg" alt="Baby's First Christmas Image" className="carousel-image" />
+        <img src="/babyxmas.jpg" alt="Baby's First Christmas Image" className="carousel-image" />
       </div>
     </Carousel>
   );

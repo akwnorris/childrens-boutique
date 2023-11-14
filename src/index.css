@@ -70,3 +70,21 @@ nav {
 .carousel .thumb.selected {
   display: none;
 }
+
+.main-carousel {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel .slider-wrapper {
+  height: 450px;
+}
+
+.carousel .slider {
+  height: 100%;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+}
