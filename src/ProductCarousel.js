@@ -58,7 +58,7 @@ const ProductCarousel = () => {
             src={product.image}
             alt={product.name}
             className={index === currentProductIndex ? `${styles.carouselImage} ${styles.active}` : styles.carouselImage}
-            style={{ width: '200px', height: '250px', marginRight: '50px' }}
+            style={{ width: '200px', height: '250px', marginRight: '20px', padding: '10px' }}
           />
         ))}
       </div>
