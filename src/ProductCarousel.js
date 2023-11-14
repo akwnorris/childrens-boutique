@@ -19,6 +19,8 @@ const ProductCarousel = () => {
 
   return (
     <div className="product-carousel">
+        <h2>Current Best Sellers</h2>
+
       <button className="slick-prev-btn slick-arrow slick-disabled" onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
       <img
           width="9"
@@ -46,7 +48,7 @@ const ProductCarousel = () => {
             src={product.image}
             alt={product.name}
             className={index === currentProductIndex ? 'carousel-image active' : 'carousel-image'}
-            style={{ width: '100px', height: '100px'}}
+            style={{ width: '200px', height: '200px'}}
           />
         ))}
       </div>
