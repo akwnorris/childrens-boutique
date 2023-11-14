@@ -91,19 +91,18 @@ nav {
 
 .carousel-button {
   position: absolute;
-  top: 50%; /* Adjust as needed */
-  left: 50%; /* Adjust as needed */
+  top: 80%;
+  left: 20%; 
   transform: translate(-50%, -50%);
-  padding: 10px 20px; /* Set padding */
-  background-color: #4CAF50; /* Set background color */
-  color: white; /* Set text color */
-  font-size: 18px; /* Set font size */
+  padding: 20px 40px;
+  background-color: #f0e9e9; /* Set background color */
+  color: black; /* Set text color */
+  font-size: 18px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* Optional: Add hover effect */
 .carousel-button:hover {
   background-color: #45a049;
 }
