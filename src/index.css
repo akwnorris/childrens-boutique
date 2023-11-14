@@ -63,11 +63,6 @@ nav {
   align-items: center;
 }
 
-.main-carousel {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
 .carousel .thumbs {
   display: none;
 }
