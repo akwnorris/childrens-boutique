@@ -5,7 +5,7 @@ import './index.css'; // Import a separate CSS file for styling
 
 const ImageCarousel = () => {
   return (
-    <Carousel className="main-carousel" autoPlay interval={3000} infiniteLoop>
+    <Carousel className="main-carousel" autoPlay interval={3000} infiniteLoop showStatus={false}>
       <div>
         <img src="/baby clothes.jpg" alt="Baby Clothes Image" className="carousel-image" />
       </div>
