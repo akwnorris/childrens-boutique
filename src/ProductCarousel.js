@@ -19,20 +19,22 @@ const ProductCarousel = () => {
 
   return (
     <div className="product-carousel">
-      <button className="slick-prev-btn slick-arrow slick-disabled" aria-disabled="true" onClick={prevProduct}></button>
-      <div className="product-image-list">
+      <button className="slick-prev-btn slick-arrow slick-disabled" onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
+        <img width="9" height="15" src="/arrow-default.svg" alt="Previous" />
+      </button>
+      <div className="image-list">
         {products.map((product, index) => (
           <img
             key={index}
             src={product.image}
             alt={product.name}
             className={index === currentProductIndex ? 'carousel-image active' : 'carousel-image'}
-            style={{ width: '150px', height: '200px' }} 
+            style={{ width: '100px', height: '100px' }}
           />
         ))}
       </div>
-      <button className="arrow-button" onClick={nextProduct}>
-        &#8594; {/* Right arrow symbol */}
+      <button className="slick-next-btn slick-arrow" onClick={nextProduct} aria-disabled={currentProductIndex === products.length - 1}>
+        <img width="9" height="15" src="/arrow-default.svg" alt="Next" />
       </button>
     </div>
   );
