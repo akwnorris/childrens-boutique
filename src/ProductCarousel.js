@@ -7,6 +7,10 @@ const ProductCarousel = () => {
     { link: '...', image: 'polkadot.jpg', name: 'Polka Dot Top' },
     { link: '...', image: 'bow.jpg', name: 'Yellow Bow' },
     { link: '...', image: 'bearjacket.jpg', name: 'Bear Jacket' },
+    { link: '...', image: 'abacus.jpg', name: 'Abacus Toy' },
+    { link: '...', image: 'kicks.jpg', name: 'Toddler Shoes' },
+    { link: '...', image: 'jacket.jpg', name: 'Toddler Jacket' },
+    { link: '...', image: 'blocks.jpg', name: 'Block Toys' }
   ];
 
   const prevProduct = () => {
