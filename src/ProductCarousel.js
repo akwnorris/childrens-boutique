@@ -20,7 +20,7 @@ const ProductCarousel = () => {
   return (
     <div className={styles.productCarousel}>
       <div className={styles.headerContainer}>
-        <h2>Featured Products</h2>
+        <h2>Our Best Sellers</h2>
       </div>
 
     {/* Commenting out the buttonContainer 
@@ -54,7 +54,7 @@ const ProductCarousel = () => {
             src={product.image}
             alt={product.name}
             className={index === currentProductIndex ? `${styles.carouselImage} ${styles.active}` : styles.carouselImage}
-            style={{ width: '200px', height: '250px'}}
+            style={{ width: '200px', height: '250px', marginRight: '50px' }}
           />
         ))}
       </div>
