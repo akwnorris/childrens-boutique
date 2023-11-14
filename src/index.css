@@ -24,12 +24,15 @@ header {
   text-align: center;
 }
 
+/*background color & text color*/
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: none;
 }
 
+/*spacing & padding*/
 .nav {
   list-style: none;
   padding: 0;
@@ -37,9 +40,26 @@ nav {
   text-align: center;
 }
 
+/*list item styling*/
 .nav li {
   display: inline;
-  margin-right: 15px;
+  margin-right: 35px;
+  font-size: 18px;
+  font-weight: thin;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*link styling*/
+.nav a {
+  text-decoration: none;
+  color: rgb(94, 89, 89);
+}
+
+/*link styling*/
+.nav a:hover {
+  text-decoration: underline;
+  color: #b45e6d;
+  font-weight: bold;
 }
 
 .App {
