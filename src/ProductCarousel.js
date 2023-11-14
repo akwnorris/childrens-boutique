@@ -19,8 +19,8 @@ const ProductCarousel = () => {
 
   return (
     <div className="product-carousel">
-      <button className="p-button" onClick={prevProduct}>Previous</button>
-      <div className="image-list">
+      <button className="slick-prev-btn slick-arrow slick-disabled" aria-disabled="true" onClick={prevProduct}></button>
+      <div className="product-image-list">
         {products.map((product, index) => (
           <img
             key={index}
@@ -31,7 +31,9 @@ const ProductCarousel = () => {
           />
         ))}
       </div>
-      <button className="product-button" onClick={nextProduct}>Next</button>
+      <button className="arrow-button" onClick={nextProduct}>
+        &#8594; {/* Right arrow symbol */}
+      </button>
     </div>
   );
 };
