@@ -16,4 +16,9 @@
     width: 100vw;
     overflow-x: scroll;
     white-space: nowrap;
+    scroll-snap-type: x mandatory;
 }
+
+.productCarousel {
+    scroll-snap-align: start;
+  }
