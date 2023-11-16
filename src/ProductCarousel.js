@@ -34,7 +34,6 @@ const ProductCarousel = () => {
             height="15"
             src="left arrow.png"
             alt="Previous"
-            style={{ transform: 'scaleX(-1)' }}
           />
         </button>
       
