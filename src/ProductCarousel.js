@@ -27,7 +27,6 @@ const ProductCarousel = () => {
         <h2>Our Best Sellers</h2>
       </div>
 
-    {/* Commenting out the buttonContainer 
       <div className={styles.buttonContainer}>
         <button className={`${styles.slickArrow} ${styles.slickPrevBtn} ${currentProductIndex === 0 ? styles.slickDisabled : ''}`} onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
           <img
@@ -49,7 +48,6 @@ const ProductCarousel = () => {
           />
         </button>
       </div> 
-      */}
 
       <div className={styles.imageList}>
         {products.map((product, index) => (
