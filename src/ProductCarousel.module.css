@@ -42,8 +42,13 @@
     width: 100vw;
     overflow-x: scroll;
     white-space: nowrap;
-    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
 }
+
+.imageList::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
 
 .productCarousel {
     scroll-snap-align: start;
