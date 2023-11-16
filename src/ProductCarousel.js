@@ -25,7 +25,6 @@ const ProductCarousel = () => {
     <div className={styles.productCarousel}>
       <div className={styles.headerContainer}>
         <h2>Our Best Sellers</h2>
-      </div>
 
       <div className={styles.buttonContainer}>
         <button className={`${styles.slickArrow} ${styles.slickPrevBtn} ${currentProductIndex === 0 ? styles.slickDisabled : ''}`} onClick={prevProduct} aria-disabled={currentProductIndex === 0}>
@@ -47,6 +46,7 @@ const ProductCarousel = () => {
           />
         </button>
       </div> 
+      </div>
 
       <div className={styles.imageList}>
         {products.map((product, index) => (
