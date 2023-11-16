@@ -32,9 +32,9 @@ const ProductCarousel = () => {
           <img
             width="9"
             height="15"
-            src="/arrow-default.svg"
+            src="/left arrow.png"
             alt="Previous"
-            style={{ transform: 'scaleX(-1)' }}
+            
           />
         </button>
       
@@ -42,7 +42,7 @@ const ProductCarousel = () => {
           <img
             width="9"
             height="15"
-            src="/arrow-default.svg"
+            src="/right arrow.png"
             alt="Next"
             style={{ transform: 'scaleX(1)' }}
           />

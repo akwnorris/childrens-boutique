@@ -18,6 +18,18 @@
     flex-direction: row;
 }
 
+.slickArrow {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  .slickArrow:active, .slickArrow:focus {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
 .imageList {
     display: flex;
     flex-direction: row;
